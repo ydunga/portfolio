@@ -11,15 +11,15 @@ const projectsData = [
     {
         title: "India's energy transition",
         date: "2026-05",
-        description: "Developed clustering algorithm to segment customers based on purchasing behavior and demographics.",
+        description: "Data, maps and reports on India's energy transition.",
         tags: ["Python", "Machine Learning", "SQL"],
         github: "https://github.com/ydunga/customer-segmentation",
         demo: "#"
     },
     {
-        title: "Local governance",
+        title: "Local governance and Macro-economics",
         date: "2026-04",
-        description: "Built forecasting model to predict monthly revenue with ARIMA and Prophet models.",
+        description: "Tracking the Indian economy and delving into datasets on local borough and district level governance.",
         tags: ["Python", "Statistics", "Forecasting"],
         github: "https://github.com/ydunga/time-series",
         demo: "#"
