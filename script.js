@@ -1,7 +1,7 @@
 // Sample projects data
 const projectsData = [
     {
-        title: "Sales Analysis Dashboard",
+        title: "Visual histories",
         date: "2026-06",
         description: "Interactive dashboard analyzing sales trends across regions and product categories using Python and Tableau.",
         tags: ["Python", "Tableau", "Data Visualization"],
@@ -9,7 +9,7 @@ const projectsData = [
         demo: "#"
     },
     {
-        title: "Customer Segmentation Model",
+        title: "India's energy transition",
         date: "2026-05",
         description: "Developed clustering algorithm to segment customers based on purchasing behavior and demographics.",
         tags: ["Python", "Machine Learning", "SQL"],
@@ -17,7 +17,7 @@ const projectsData = [
         demo: "#"
     },
     {
-        title: "Time Series Forecasting",
+        title: "Local governance",
         date: "2026-04",
         description: "Built forecasting model to predict monthly revenue with ARIMA and Prophet models.",
         tags: ["Python", "Statistics", "Forecasting"],
