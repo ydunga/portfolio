@@ -1,0 +1,77 @@
+// Sample projects data
+const projectsData = [
+    {
+        title: "Sales Analysis Dashboard",
+        date: "2026-06",
+        description: "Interactive dashboard analyzing sales trends across regions and product categories using Python and Tableau.",
+        tags: ["Python", "Tableau", "Data Visualization"],
+        github: "https://github.com/ydunga/sales-analysis",
+        demo: "#"
+    },
+    {
+        title: "Customer Segmentation Model",
+        date: "2026-05",
+        description: "Developed clustering algorithm to segment customers based on purchasing behavior and demographics.",
+        tags: ["Python", "Machine Learning", "SQL"],
+        github: "https://github.com/ydunga/customer-segmentation",
+        demo: "#"
+    },
+    {
+        title: "Time Series Forecasting",
+        date: "2026-04",
+        description: "Built forecasting model to predict monthly revenue with ARIMA and Prophet models.",
+        tags: ["Python", "Statistics", "Forecasting"],
+        github: "https://github.com/ydunga/time-series",
+        demo: "#"
+    }
+];
+
+// Load projects on page load
+document.addEventListener('DOMContentLoaded', loadProjects);
+
+function loadProjects() {
+    const projectsGrid = document.getElementById('projects-grid');
+    
+    if (projectsData.length === 0) {
+        projectsGrid.innerHTML = '<p class="loading">No projects yet. Check back soon!</p>';
+        return;
+    }
+
+    projectsGrid.innerHTML = projectsData.map(project => `
+        <div class="project-card">
+            <div class="project-header">
+                <h3 class="project-title">${project.title}</h3>
+                <p class="project-date">${formatDate(project.date)}</p>
+            </div>
+            <div class="project-content">
+                <p class="project-description">${project.description}</p>
+                <div class="project-tags">
+                    ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                </div>
+                <div class="project-links">
+                    <a href="${project.github}" target="_blank" class="project-link">View on GitHub</a>
+                    ${project.demo !== '#' ? `<a href="${project.demo}" target="_blank" class="project-link">Live Demo</a>` : ''}
+                </div>
+            </div>
+        </div>
+    `).join('');
+}
+
+function formatDate(dateString) {
+    const [year, month] = dateString.split('-');
+    const date = new Date(year, month - 1);
+    return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long' });
+}
+
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href !== '#' && document.querySelector(href)) {
+            e.preventDefault();
+            document.querySelector(href).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});
