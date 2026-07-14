@@ -3,9 +3,9 @@ const projectsData = [
     {
         title: "Visual histories",
         date: "2026-06",
-        description: "Interactive dashboard analyzing sales trends across regions and product categories using Python and Tableau.",
-        tags: ["Python", "Tableau", "Data Visualization"],
-        github: "https://github.com/ydunga/sales-analysis",
+        description: "Visual history timelines for events/institutions. An effort in making history of institutions more interesting",
+        tags: ["Python", "HTML", 'graphics'],
+        github: "https://ydunga.github.io/historyofrbi/",
         demo: "#"
     },
     {
