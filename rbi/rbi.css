@@ -1,0 +1,74 @@
+body {
+    padding-top: 5vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+h1,h3, h5 {
+    text-align: center;
+}
+
+p, a{
+    text-align: center;
+    font-size: 15px;
+}
+
+svg {
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+}
+
+.headingphase {
+    justify-content: center;
+    align-items: center;
+}
+
+.phase1 {
+ 
+    border-top: 3px solid black;
+    padding: 30px;
+    margin: 10px;
+}
+
+.phase2 { 
+ 
+    border-top: 5px solid black;
+    padding: 30px;
+    margin: 10px;
+}
+
+.phase3 { 
+    
+    border-top: 5px solid black;
+    padding: 30px;
+    margin: 10px;
+}
+
+.phase4 { 
+   
+    border-top: 5px solid black;
+    padding: 30px;
+    margin: 10px;
+}
+
+.phase5 { 
+  
+    border-top: 5px solid black;
+    padding: 30px;
+    margin: 10px;
+}
+
+.phase6 { 
+ 
+    border-top: 5px solid black;
+    padding: 30px;
+    margin: 10px;
+}
+
+.phase7 { 
+    
+    border-top: 5px solid black;
+    padding: 30px;
+    margin: 10px;
+}
