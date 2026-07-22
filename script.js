@@ -5,7 +5,7 @@ const projectsData = [
         date: "2026-06",
         description: "Visual history timelines for events/institutions. An effort in making history of institutions more interesting",
         tags: ["Python", "HTML", 'graphics'],
-        github: "https://ydunga.github.io/ealing_business_units/",
+        github: "" ,
         demo: "#"
     },
     {
@@ -21,7 +21,10 @@ const projectsData = [
         date: "2026-04",
         description: "Tracking the Indian economy and delving into datasets on local borough and district level governance.",
         tags: ["Python", "Statistics", "Forecasting"],
-        github: "https://github.com/ydunga/time-series",
+        github: [
+            {label: 'Ealing - business units', url : 'https://ydunga.github.io/ealing_business_units/'}, 
+            
+        ],
         demo: "#"
     }
 ];
