@@ -6,7 +6,6 @@ const projectsData = [
         description: "Visual history timelines for events/institutions. An effort in making history of institutions more interesting",
         tags: ["Python", "HTML", 'graphics'],
         github: "https://ydunga.github.io/ealing_business_units/",
-        github: 'https://azofindianhistory.wordpress.com/',
         demo: "#"
     },
     {
